@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<node id="TOP">
+<!-- id, address, permission, mode, size, description, tag -->
+
+	<node id="CONTROLS" address="0x00000001" permission="rw">
+		<node id="RESET" mask="0x80000000" permission="w"/>
+		<node id="fifo_reset" mask="0x40000000" permission="w"/>
+		<node id="data_saving" mask="0x20000000" permission="w"/>
+		<node id="nmb_of_smpls" mask="0x1FE00000" permission="w"/>
+		<node id="random_trig" mask="0x00100000" permission="w"/>
+		<node id="PENeLOPE_status" mask="0x000FF000" permission="w"/>
+		<node id="factor" mask="0x00000F00" permission="w"/>
+		<node id="reg_length" mask="0x000000E0" permission="w"/>
+		<node id="smpls_for_ped_calc" mask="0x0000001C" permission="w"/>
+		<node id="not_used" mask="0x00000003" permission="w"/>
+	</node>
+	
+	<!--
+	<node id="DATA" address="0x00000002" mode="non-incremental" size="65536" permission="r"/>
+	-->
+	<node id="DATA" address="0x00000002" mode="non-incremental" size="65536" permission="r"/>
+	<node id="FLAGS" address="0x00000003" permission="r">
+		<node id="WORD_CNT" mask="0x0001FFFE" permission="r" />
+	</node>
+
+	<node id="RST" address="0x00000000" permission="w"/>
+	
+	<!--
+	<node id="BUSY" address="0x0000000d" permission="rw">
+		<node id="LEVEL" mask="0x0000FFFF" permission="r" /> 
+		<node id="STATUS" mask="0x0010000" permission="r" />
+		<node id="FORCE" mask="0x00020000" permission="rw" />
+   </node>
+   -->
+
+</node>

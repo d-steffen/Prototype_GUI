@@ -1,0 +1,5 @@
+New Settings applied:
+   Number of collected samples per event: 50
+   Number of consecutive samples for trigger decision: 2
+   Multiplication factor for signal detection: 4
+Measurement 20141124_151430:
