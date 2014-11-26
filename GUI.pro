@@ -17,5 +17,5 @@ QMAKE_LFLAGS += -lboost_system -lcactus_uhal_uhal -pthread -lboost_filesystem \
 
 # Input
 HEADERS += NACdialog.h Readout.h text_file.h data_format.h tree_format.h live_analyzer.h
-FORMS += NACdialog.ui SaveLogDialog.ui
+FORMS += NACdialog.ui
 SOURCES += main.cpp NACdialog.cpp Readout.cpp text_file.cpp live_analyzer.cpp
